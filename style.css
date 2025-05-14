@@ -333,3 +333,25 @@ main {
 footer{
     width: 100%;
 }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Вертикально */
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .nav-button a {
+        display: block;
+        width: 100%;
+        background-color: var(--color-btn);
+        color: var(--text-color-2);
+        padding: 10px;
+        text-decoration: none;
+    }
+}
