@@ -70,7 +70,7 @@ nav ul {
     height: auto;
 }
 .slider{
-    max-width: 75%;
+    max-width: 900px;
     overflow: hidden;
     position: relative;
     border:black solid 2px;
@@ -87,13 +87,19 @@ nav ul {
 .btn{
     position: absolute;    
     top: calc(50% + 16px);
+    background-color: rgba(0, 0, 0, 0);
 }
 #btn-next{
     right: 0;
-
+    background-image: url(./icons/icons8-next-page-64\ \(1\).png);
+    width: 64px;
+    height: 64px
 }
 #btn-prev{
     left: 0;
+    background-image: url(./icons/icons8-back-to-64.png);
+    width: 64px;
+    height: 64px
 }
 .text-box{
     width: 300px;
@@ -113,6 +119,16 @@ nav ul {
     height: 92px;
 }
 main {
+    display: flex;  
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+    background-image: url(./img/pexels-mario-cuadros-1166886-2413089.jpg);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.card-news{
     display: flex; 
     flex-wrap: wrap; 
     gap: 20px; 
@@ -123,8 +139,15 @@ main {
 .main-title {
     text-align: center;
     font-size: 24px;
-    color: azure;
+    color: white;
     margin-bottom: 20px;
+    background-color: darkred;
+    width: 1000px;
+    height: 60px;
+    border-radius: 15px;
+    border: darkgoldenrod solid 5px;
+    padding-top: 10px;
+    
 }
 .text-box { 
     box-sizing: border-box;
