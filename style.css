@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: red;
-    --secondary-color: navy;
+    --primary-color: rgb(187, 37, 37);
+    --secondary-color: lightblue;
     --text-color: azure;
 }
 body {
-    background-color: var(--secondary-color);
+    background-color: lightblue;
 }
 header {
     background-color: var(--primary-color);
@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border: darkgoldenrod 5px solid;
+    border-radius:15px;
 }
 
 .logo {
@@ -47,7 +49,7 @@ nav ul {
     display: inline-flex; 
     align-items: center;
     justify-content: center;
-    border: 3px solid black;
+    border: 3px solid darkgoldenrod;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 40px;
@@ -55,7 +57,7 @@ nav ul {
 
 .nav-button a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px;
 }
 .content{
@@ -141,7 +143,7 @@ main {
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
-    background-color: darkred;
+    background-color: var(--primary-color);
     width: 1000px;
     height: 60px;
     border-radius: 15px;
@@ -169,7 +171,7 @@ main {
 }
 .sub-content {
     padding: 20px;
-    background-color: navy;
+    background-color: rgb(66, 145, 172);
     color: white;
     text-align: center;
 }
@@ -182,7 +184,7 @@ main {
 }
 
 .league-table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
     background-color: darkred;
